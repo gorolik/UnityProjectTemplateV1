@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Sources.UI.Sounds
+namespace Sources.UI.Utils.Sounds
 {
     public class UISoundsSource : MonoBehaviour
     {

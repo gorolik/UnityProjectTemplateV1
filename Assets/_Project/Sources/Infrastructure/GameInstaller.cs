@@ -4,7 +4,7 @@ using Sources.Services.Factories;
 using Sources.Services.Input;
 using Sources.Services.Scene;
 using Sources.Services.Windows;
-using Sources.UI.Sounds;
+using Sources.UI.Utils.Sounds;
 using UnityEngine;
 using Zenject;
 

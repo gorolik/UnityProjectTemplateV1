@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using Zenject;
 
-namespace Sources.UI.Sounds
+namespace Sources.UI.Utils.Sounds
 {
     [RequireComponent(typeof(Button))]
     public class ButtonClickSoundSource : MonoBehaviour

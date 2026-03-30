@@ -88,6 +88,8 @@ GameObject:
   - component: {fileID: 3984778430200564932}
   - component: {fileID: 4015387768801193200}
   - component: {fileID: 7556230818405521735}
+  - component: {fileID: 3939309285143445226}
+  - component: {fileID: 4683856307128768242}
   m_Layer: 5
   m_Name: DefaultButton
   m_TagString: Untagged
@@ -210,6 +212,99 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb78e965e9d1ca14898f8ed824b297d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sources.UI.Sounds.ButtonClickSoundSource
+--- !u!114 &3939309285143445226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2963236681068834037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afaadb0484d22cb4c968264c9e79542d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sources.UI.Utils.ButtonCursorAnimation
+  _hoverTargetScale: 1.1
+  _hoverDuration: 0.25
+  _clickTargetScale: 0.9
+  _clickDuration: 0.15
+--- !u!114 &4683856307128768242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2963236681068834037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3939309285143445226}
+          m_TargetAssemblyTypeName: Sources.UI.Utils.ButtonCursorAnimation, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3939309285143445226}
+          m_TargetAssemblyTypeName: Sources.UI.Utils.ButtonCursorAnimation, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3939309285143445226}
+          m_TargetAssemblyTypeName: Sources.UI.Utils.ButtonCursorAnimation, Assembly-CSharp
+          m_MethodName: OnPointerDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3939309285143445226}
+          m_TargetAssemblyTypeName: Sources.UI.Utils.ButtonCursorAnimation, Assembly-CSharp
+          m_MethodName: OnPointerUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7745266953835384453
 GameObject:
   m_ObjectHideFlags: 0

@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sources.UI.Sounds.UISoundsSource
   _buttonClickSource: {fileID: 3116377599117315653}
-  _buttonClickSound: {fileID: 0}
+  _buttonClickSound: {fileID: 8300000, guid: f2ecebdb16ca9c1469685cd600abcb2e, type: 3}
 --- !u!82 &3116377599117315653
 AudioSource:
   m_ObjectHideFlags: 0
