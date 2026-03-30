@@ -1,5 +1,6 @@
 ﻿using Sources.Data.ScriptableObjects;
 using Sources.Data.ScriptableObjects.UI;
+using Sources.Services.Data;
 using Sources.Services.Factories;
 using Sources.Services.Input;
 using Sources.Services.Scene;
@@ -21,7 +22,8 @@ namespace Sources.Infrastructure
         {
             Container.Bind<GlobalGameSettings>().FromInstance(_globalGameSettings).AsSingle();
             Container.Bind<WindowsList>().FromInstance(_windowsList).AsSingle();
-            
+
+            Container.Bind<IDataService>().To<PlayerPrefsDataService>().FromNew().AsSingle();
             Container.Bind<ISceneService>().To<SceneService>().FromNew().AsSingle();
             Container.Bind<IInputService>().To<KeyboardMouseInputService>().FromNew().AsSingle();
             Container.Bind<IUIFactory>().To<UIFactory>().FromNew().AsSingle();

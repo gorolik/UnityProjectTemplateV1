@@ -1,4 +1,5 @@
 ﻿using BaseSettings.Scripts.Data;
+using Sources.Data;
 using UnityEngine;
 
 namespace Sources.Infrastructure
@@ -30,6 +31,7 @@ namespace Sources.Infrastructure
 
     public class GameDataContent
     {
+        public PlayerData PlayerData;
         public PlayerSettingsData PlayerSettingsData;
         public int ReturnSceneIndex;
     }
